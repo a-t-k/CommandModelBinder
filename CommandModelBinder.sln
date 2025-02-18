@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandModelBinder", "CommandModelBinder.csproj", "{6B40B6F1-6E20-43CD-9A82-063523417F7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandModelBinder", "src\CommandModelBinder\CommandModelBinder.csproj", "{755445BC-98B7-40DD-924B-2166D3A1B714}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6B40B6F1-6E20-43CD-9A82-063523417F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B40B6F1-6E20-43CD-9A82-063523417F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B40B6F1-6E20-43CD-9A82-063523417F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B40B6F1-6E20-43CD-9A82-063523417F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{755445BC-98B7-40DD-924B-2166D3A1B714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{755445BC-98B7-40DD-924B-2166D3A1B714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{755445BC-98B7-40DD-924B-2166D3A1B714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{755445BC-98B7-40DD-924B-2166D3A1B714}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
