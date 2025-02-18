@@ -15,12 +15,16 @@ With the `Command Model Binder`, incoming requests can bind client data to an ex
 
 **Availability**
 
-You can install the `Command Model Binder` package from NuGet by searching for "UniversalConverter" or using the following command:
+You can install the `Command Model Binder` package from NuGet by searching for "CommandModelBinder" or using the following command:
+
 
 
 ```
-Install-Package AT<insert here>
+Install-Package CommandModelBinder
+
 ```
+
+The package is available on [NuGet]((https://www.nuget.org/packages/CommandModelBinder/0.0.1)).
 
 #### Usage
 To use command model binder <insert here>

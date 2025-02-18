@@ -4,7 +4,7 @@
 		<OutputType>library</OutputType>
 		<TargetFramework>net9.0</TargetFramework>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Title>Generates Classes. Enums from C# to TypeScript</Title>
+		<Title>Binding requests to commands.</Title>
 		<Version>0.0.1</Version>
 		<Description>Command Model Binder for ASP.NET Core.</Description>
 		<RepositoryUrl>https://github.com/a-t-k/</RepositoryUrl>
