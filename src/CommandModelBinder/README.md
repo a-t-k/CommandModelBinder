@@ -24,7 +24,7 @@ Install-Package CommandModelBinder
 
 ```
 
-The package is available on [NuGet]((https://www.nuget.org/packages/CommandModelBinder/0.0.1)).
+The package is available on [NuGet]((https://www.nuget.org/packages/CommandModelBinder/0.0.2)).
 
 #### Usage
 To use command model binder <insert here>

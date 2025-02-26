@@ -5,7 +5,7 @@
 		<TargetFramework>net9.0</TargetFramework>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Binding requests to commands.</Title>
-		<Version>0.0.1</Version>
+		<Version>0.0.2</Version>
 		<Description>Command Model Binder for ASP.NET Core.</Description>
 		<RepositoryUrl>https://github.com/a-t-k/</RepositoryUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -13,7 +13,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authorization" Version="9.0.2" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.3.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 	<ItemGroup>

@@ -54,20 +54,33 @@ public class RequestCommandModelBinder<T> : IModelBinder
             bindingContext.ModelState.TryAddModelError("Unauthorized", "no command.");
             return Task.CompletedTask;
         }
+
         try
         {
             var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Objects };
-            dynamic model = JsonConvert.DeserializeObject(json, settings);
+            if (!this.IsValid(json, settings, out var model))
+            {
+                bindingContext.Result = ModelBindingResult.Failed();
+                bindingContext.ModelState.TryAddModelError("Unauthorized", "not valid json.");
+                return Task.CompletedTask;
+            }
+
             if (!(model is T))
             {
                 // Some request send Object as a string. We check this behaviour with another deserializing.
-                model = JsonConvert.DeserializeObject(model, settings);
+                if (!this.IsValid(model.ToString(), settings, out model))
+                {
+                    bindingContext.Result = ModelBindingResult.Failed();
+                    bindingContext.ModelState.TryAddModelError("Unauthorized", "not valid json.");
+                    return Task.CompletedTask;
+                }
             }
 
-            if (model is null)
+            if (!(model is T))
             {
                 bindingContext.Result = ModelBindingResult.Failed();
                 bindingContext.ModelState.TryAddModelError("Parsing", "Cant parse to object.");
+                return Task.CompletedTask;
             }
 
             if (this.commandAuthentications.Any() && this.commandAuthentications.All(commandAuthentication => commandAuthentication.Execute(bindingContext, model) is true))
@@ -84,5 +97,20 @@ public class RequestCommandModelBinder<T> : IModelBinder
         bindingContext.Result = ModelBindingResult.Failed();
         bindingContext.ModelState.TryAddModelError("Unauthorized", "Access denied.");
         return Task.CompletedTask;
+    }
+
+    private bool IsValid(string jsonValue, JsonSerializerSettings jsonSerializerSettings, out dynamic deserializedObject)
+    {
+        deserializedObject = null;
+        try
+        {
+            deserializedObject = JsonConvert.DeserializeObject(jsonValue, jsonSerializerSettings);
+        }
+        catch (Exception)
+        {
+            return false;
+        }
+
+        return true;
     }
 }
