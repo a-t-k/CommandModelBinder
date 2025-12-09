@@ -30,7 +30,7 @@ public class RequestCommandModelBinderTests
     }
 
     [Test]
-    public async Task When_BodyPayloadCantBeParsetToCommand_SetError()
+    public async Task When_BodyPayloadCantBeParsedToCommand_SetError()
     {
         var modelBinder = new RequestCommandModelBinder<IRequestTestCommand>();
         var bindingContext = new DefaultModelBindingContext();
@@ -207,7 +207,7 @@ public class RequestCommandModelBinderTests
     private ClaimsPrincipal GetClaimsPrincipal()
     {
         var claimsIdentity = new List<Claim>() { new(ClaimTypes.Role, "Administrator"), new("Test.Claim", string.Empty) };
-        var identity = new ClaimsIdentity(claimsIdentity, authenticationType: "OnlyTestAndSetPlzSetIsAuthenticatedToTrue");
+        var identity = new ClaimsIdentity(claimsIdentity, authenticationType: "OnlyTestAndSetIsAuthenticatedToTrue");
         var principal = new ClaimsPrincipal(identity);
         return principal;
     }
