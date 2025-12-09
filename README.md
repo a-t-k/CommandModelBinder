@@ -256,7 +256,7 @@ public async Task Bind_ValidCommand_ShouldSucceed()
 
 ## 📝 Version
 
-- **Current Version**: 0.0.3
+- **Current Version**: 0.0.4
 - **.NET Target**: net9.0
 - **Status**: Production Ready
 
