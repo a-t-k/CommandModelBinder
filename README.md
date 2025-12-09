@@ -272,17 +272,4 @@ This project is licensed under the MIT License. See LICENSE file for details.
 
 ---
 
-## Getting Started with Documentation
-
-Start with one of these depending on your needs:
-
-- **New User?** → [GETTING_STARTED.md](GETTING_STARTED.md) (10 minutes)
-- **Need Examples?** → [EXAMPLES.md](EXAMPLES.md) (20 minutes)
-- **Want API Details?** → [API_REFERENCE.md](API_REFERENCE.md) (15 minutes)
-- **Understanding Architecture?** → [ARCHITECTURE.md](ARCHITECTURE.md) (20 minutes)
-- **Quick Lookup?** → [QUICK_REFERENCE.md](QUICK_REFERENCE.md) (5 minutes)
-- **Not sure where to start?** → [DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md) (10 minutes)
-
----
-
 **Made with ❤️ for ASP.NET Core developers**
