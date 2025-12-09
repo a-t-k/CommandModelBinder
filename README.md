@@ -101,18 +101,6 @@ public class AdminCommand : IMyCommand { }
 public class ITCommand : IMyCommand { }
 ```
 
-## 📚 Documentation
-
-Complete documentation is available:
-
-- **[GETTING_STARTED.md](GETTING_STARTED.md)** - Installation and setup guide
-- **[API_REFERENCE.md](API_REFERENCE.md)** - Complete API documentation
-- **[ARCHITECTURE.md](ARCHITECTURE.md)** - Design and architecture guide
-- **[EXAMPLES.md](EXAMPLES.md)** - 20+ practical code examples
-- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Quick lookup cheat sheet
-- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Development and extension guide
-- **[DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md)** - Master index and navigation
-
 ## 🏗️ Architecture
 
 ### Core Components
