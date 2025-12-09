@@ -5,7 +5,7 @@
 		<TargetFramework>net9.0</TargetFramework>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Binding requests to commands.</Title>
-		<Version>0.0.3</Version>
+		<Version>0.0.4</Version>
 		<Description>Command Model Binder for ASP.NET Core.</Description>
 		<RepositoryUrl>https://github.com/a-t-k/</RepositoryUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>

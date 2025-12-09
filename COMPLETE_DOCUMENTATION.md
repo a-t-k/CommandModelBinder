@@ -624,7 +624,7 @@ dotnet pack -c Release -o nupkg
 
 ## Version Information
 
-- **Current Version**: 0.0.3
+- **Current Version**: 0.0.4
 - **.NET Target**: net9.0
 - **Dependencies**:
   - Microsoft.AspNetCore.Authorization 9.0.2
